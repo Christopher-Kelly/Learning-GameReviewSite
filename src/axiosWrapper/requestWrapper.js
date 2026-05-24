@@ -19,6 +19,10 @@ export async function requestWrapper(config) {
 
         return response.data;
     } catch (error) {
+        if (error.response?.status === 401) {
+            localStorage.removeItem("token");
+            window.location.href = '/login';
+        }
         throw {
             message: error.response?.data?.message || error.message,
             status: error.response?.status,

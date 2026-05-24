@@ -1,10 +1,9 @@
 import {RegistrationPage} from "../pages/RegistrationPage";
-import {BrowserRouter, Route, Routes} from "react-router";
+import {Route, Routes} from "react-router";
 import App from "../App";
 import {FirstPage} from "../pages/FirstPage";
 import {LoginPage} from "../pages/LoginPage";
 import {ProtectedRoute} from "../components/ProtectedRoute";
-import {Auth} from "../pages/Auth";
 import {ErrorPage} from "../pages/ErrorPage";
 import {HomePage} from "../pages/HomePage";
 import {GamePage} from "../pages/GamePage";
@@ -20,7 +19,6 @@ export const Router = () => {
 
                 {/* Public routes */}
                 <Route path="/games/:id" element={<GamePage />} />
-                <Route path="/auth" element={<Auth />} />
                 <Route path="/home" element={<HomePage />} />
                 <Route path="/error" element={<ErrorPage />} />
                 <Route path="/login" element={<LoginPage />} />
