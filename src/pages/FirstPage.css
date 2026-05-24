@@ -1,0 +1,32 @@
+body{
+    background: #61dafb !important;
+    display: grid !important;
+}
+
+
+
+.firstPage {
+    display: grid;
+    height: 100vh; /* full viewport height */
+    grid-template-columns: 1fr 1fr 1fr;  /* 3 equal columns */
+    grid-template-rows: 1fr 1fr 1fr;     /* 3 equal rows */
+}
+
+
+
+.reactPlayer {
+    grid-column: 2;  /* middle column */
+    grid-row: 2;
+}
+
+.sidebar {
+    grid-column: 1;
+}
+
+.player {
+    grid-column: 2;
+}
+
+
+
+
