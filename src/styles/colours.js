@@ -1,0 +1,26 @@
+export const colours = {
+    pageBg: '#0f1117',
+    card: '#1a1a2e',
+    cardBorder: '#2a2a4a',
+    cardBorderAccent: '#3a3a6a',
+    cardHover: '#22224a',
+    buttonHover: '#2a2a4e',
+    inputBorder: '#3a3a5c',
+    inputBorderHover: '#6a6a9c',
+    text: '#ffffff',
+    textMuted: '#9090b0',
+    textDim: '#c0c0d0',
+    textCategory: '#9090d0',
+    gold: '#ffd700',
+    primary: '#1976d2',
+    error: {
+        bg: '#2d1515',
+        text: '#ff6b6b',
+        border: '#5d2020',
+    },
+    success: {
+        bg: '#152d15',
+        text: '#69db7c',
+        border: '#206020',
+    },
+};
